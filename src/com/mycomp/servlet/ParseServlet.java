@@ -50,7 +50,7 @@ public class ParseServlet {
         }
 
         /*
-         * 2. 根据解析结果创建字节码
+         * 2. 根据解析结果创建字节码并执行init方法
          */
         Class<?> clazz = Class.forName(targetServletClass);
         Object obj = clazz.newInstance();
