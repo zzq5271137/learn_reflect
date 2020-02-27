@@ -31,5 +31,6 @@ public class Practise {
         Method myStr = clazz.getDeclaredMethod("myStr", String.class);
         myStr.setAccessible(true);
         System.out.println(myStr.invoke(person, "friday"));
+        
     }
 }
